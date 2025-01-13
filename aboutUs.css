@@ -1,0 +1,550 @@
+.section {
+    background-color: #eaeaea;
+    /* border: 1px solid #ccc;  */
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(90deg, #4ca1af, #2c3e50);
+    padding: 15px 20px;
+    /* margin: 0 105px; */
+    margin-top: 20px;
+    /* border-radius: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+header .logo img {
+    max-width: 250px;
+    /* padding: 5px;
+    background-color: #fff; */
+    border-radius: 5px;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #f1c40f;
+}
+
+/* General Styling for Dropdown */
+.dropdown-menu {
+    position: relative;
+    white-space: nowrap;
+    /* Ensure all items are in a single line */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.dropdown-item {
+    position: relative;
+    padding: 10px 15px;
+    /* Padding for dropdown items */
+}
+
+/* Submenu Styling */
+.dropdown-item .dropdown-menu {
+    display: none;
+    /* Hide submenus by default */
+    position: absolute;
+    top: 0;
+    left: 100%;
+    /* Position submenus to the right of parent */
+    z-index: 1000;
+    /* Ensure submenus appear on top */
+}
+
+/* Show submenu on hover */
+.dropdown-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Link Styling */
+nav a,
+.dropdown-menu a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    color: #333;
+    /* Adjust text color */
+}
+
+.dropdown-menu a:hover {
+    background-color: #f8f9fa;
+    /* Hover effect */
+    color: #000;
+}
+
+/* Optional: Navbar links */
+nav a {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.head-img {
+    position: relative;
+    text-align: center;
+    /* margin: 0 85px; */
+    margin: 10px 10px 5px 10px;
+    /* Match the margin of other sections */
+    /* width: calc(100% - 170px); */
+    width: 98.4%;
+    /* Maintain consistent width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.head-img img {
+    width: 100%;
+    /* Maintain full width */
+    height: 400px;
+    /* Adjust height to be smaller */
+    object-fit: cover;
+    /* Ensure the video scales properly */
+}
+
+.head-msg {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    text-align: center;
+}
+
+.head-msg h1 {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: black;
+}
+
+.carousel {
+    /* margin: 0 85px; */
+    margin: 10px 10px 5px 10px;
+    max-width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.aboutUs {
+    width: 200px;
+    font-weight: bolder;
+    color: rgb(6, 176, 176);
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+    margin: auto;
+}
+
+.left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #fff;
+    margin: 10px 10px 5px 10px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 10px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Image Container */
+.left-container .image-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Text Container */
+.left-container .text-container {
+    margin-left: 50px;
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Heading Styling */
+.left-container .text-container h1 {
+    color: #333;
+    font-size: 28px;
+    text-decoration: underline;
+    text-decoration-color: rgb(138, 138, 237);
+    text-underline-offset: 7px;
+    text-decoration-thickness: 3.1px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.left-container .text-container p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+
+/* Tablet view (max-width: 768px) */
+@media (max-width: 768px) {
+    .left-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    .left-container .image-container img {
+        max-width: 100%; /* Make image take full width on smaller screens */
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .left-container .text-container {
+        max-width: 100%; /* Make text container take full width */
+    }
+
+    .left-container .text-container h1 {
+        font-size: 24px; /* Smaller heading font size */
+    }
+
+    .left-container .text-container p {
+        font-size: 14px; /* Smaller paragraph font size */
+    }
+}
+
+/* Mobile view (max-width: 480px) */
+@media (max-width: 480px) {
+    .left-container {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .left-container .image-container img {
+        max-width: 100%; /* Full-width image on very small screens */
+    }
+
+    .left-container .text-container h1 {
+        font-size: 20px; /* Smaller heading font size */
+    }
+
+    .left-container .text-container p {
+        font-size: 12px; /* Even smaller font for paragraph */
+    }
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 10px;
+    text-align: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    border-radius: 10px;
+}
+
+.miss-viss {
+    border: 1px solid black;
+    padding: 20px;
+    /* box-shadow: 0 5px yellow inset; */
+    box-shadow: 0 5px 15px yellow inset;
+    width: 48%; /* Set width for large screens */
+    margin-bottom: 20px; /* Add margin for spacing */
+    border-radius: 10px;
+}
+
+.miss-viss i {
+    font-size: 2rem; /* Adjust icon size */
+    margin-bottom: 10px; /* Space between icon and heading */
+}
+
+.miss-viss h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.miss-viss p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+
+/* Tablet view (max-width: 768px) */
+@media (max-width: 768px) {
+    .mission-vision {
+        flex-direction: column; /* Stack mission and vision vertically */
+        gap: 1.5rem; /* Reduce gap between items */
+    }
+
+    .miss-viss {
+        width: 100%; /* Full width for both sections */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .miss-viss h2 {
+        font-size: 1.4rem; /* Adjust heading size */
+    }
+
+    .miss-viss p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+
+    .miss-viss i {
+        font-size: 1.8rem; /* Adjust icon size */
+    }
+}
+
+/* Mobile view (max-width: 480px) */
+@media (max-width: 480px) {
+    .mission-vision {
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .miss-viss {
+        padding: 15px; /* Less padding on mobile */
+    }
+
+    .miss-viss h2 {
+        font-size: 1.2rem; /* Smaller heading size */
+    }
+
+    .miss-viss p {
+        font-size: 0.85rem; /* Smaller paragraph size */
+    }
+
+    .miss-viss i {
+        font-size: 1.6rem; /* Smaller icon size */
+    }
+}
+
+.dirMsg {
+    background-color: rgb(189, 189, 246);
+    text-align: center;
+    margin: 10px 10px 5px 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.dirMsg h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.dirMsg p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* DiMsg (Flexbox Layout for Founder & Co-Founder) */
+.diMsg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Individual Message Boxes (Founder & Co-Founder) */
+.msg {
+    margin-top: 30px;
+    text-align: center;
+    flex: 1; /* Ensures equal width for the items */
+    padding: 10px;
+}
+
+.msg img {
+    max-width: 200px; /* Adjust image size */
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Text in Message Boxes */
+.msg p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Responsive Design */
+
+/* Tablet view (max-width: 768px) */
+@media (max-width: 768px) {
+    .dirMsg h2 {
+        font-size: 1.8rem; /* Smaller heading font size */
+    }
+
+    .dirMsg p {
+        font-size: 1.1rem; /* Smaller paragraph font size */
+    }
+
+    .diMsg {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .msg {
+        flex: none;
+        margin-bottom: 20px;
+        max-width: 80%; /* Limit width on smaller screens */
+    }
+
+    .msg img {
+        max-width: 150px; /* Smaller image size */
+    }
+}
+
+/* Mobile view (max-width: 480px) */
+@media (max-width: 480px) {
+    .dirMsg {
+        padding: 15px; /* Reduce padding on mobile */
+    }
+
+    .dirMsg h2 {
+        font-size: 1.6rem; /* Smaller heading font size */
+    }
+
+    .dirMsg p {
+        font-size: 1rem; /* Even smaller paragraph font size */
+    }
+
+    .msg {
+        flex: none;
+        margin-bottom: 20px;
+        max-width: 90%; /* Limit width further */
+    }
+
+    .msg img {
+        max-width: 120px; /* Smaller image on mobile */
+    }
+
+    .msg p {
+        font-size: 1rem; /* Slightly smaller text */
+    }
+}
+
+footer {
+    /* margin-top: 20px; */
+    background-color: #f8d7da;
+    padding: 40px 20px;
+}
+
+.footer {
+    /* margin: 0 85px; */
+    margin: 10px 10px 5px 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #182848, #4b6cb7);
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer .column {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer .column p {
+    /* margin-top: 50px; */
+    margin-right: 50px;
+}
+
+.footer .column a{
+    color: white;
+}
+
+.footer .column a:hover{
+    color: yellow;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #f1c40f;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #f1c40f;
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.social-icons i:hover{
+    color: yellow;
+}
+
+.copyRight {
+    /* margin: 10px 85px; */
+    margin: 10px 10px 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #182848;
+    color: white;
+}

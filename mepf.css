@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0 100px;
+    padding: 0;
+}
+
+.section {
+    background-color: #eaeaea;
+    /* border: 1px solid #ccc;  */
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(90deg, #4ca1af, #2c3e50);
+    padding: 15px 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+header .logo img {
+    max-width: 250px;
+    border-radius: 5px;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 0.9rem;
+}
+
+header nav a:hover {
+    color: #f1c40f;
+}
+
+/* General Styling for Dropdown */
+.dropdown-menu {
+    position: relative;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.dropdown-menu li{
+    margin: 0;
+}
+
+.dropdown-menu li a{
+    color: black;
+}
+
+.dropdown-item {
+    position: relative;
+    padding: 10px 15px;
+}
+
+.dropdown-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1000;
+}
+
+.dropdown-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Optional: Navbar links */
+nav a {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    header nav {
+        flex-direction: column;
+    }
+    
+    .navbar-collapse {
+        width: 100%;
+    }
+    
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+    
+    .navbar-toggler {
+        background: none;
+        border: none;
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3e%3cpath fill="%23fff" d="M0 7h30v3H0zm0 7h30v3H0zm0 7h30v3H0z"%3e%3c/path%3e%3c/svg%3e');
+    }
+}
+
+.head-img {
+    position: relative;
+    text-align: center;
+    /* margin: 0 85px; */
+    margin: 10px 10px 5px 10px;
+    /* Match the margin of other sections */
+    /* width: calc(100% - 170px); */
+    width: 98.4%;
+    /* Maintain consistent width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.head-img img {
+    width: 100%;
+    /* Maintain full width */
+    height: 400px;
+    /* Adjust height to be smaller */
+    object-fit: cover;
+    /* Ensure the video scales properly */
+}
+
+.head-msg {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    text-align: center;
+}
+
+.head-msg h1 {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: black;
+}
+
+.left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #fff;
+    margin: 10px 10px 5px 10px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 10px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Image Container */
+.left-container .image-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Text Container */
+.left-container .text-container {
+    margin-left: 50px;
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Heading Styling */
+.left-container .text-container h1 {
+    color: #333;
+    font-size: 28px;
+    text-decoration: underline;
+    text-decoration-color: rgb(138, 138, 237);
+    text-underline-offset: 7px;
+    text-decoration-thickness: 3.1px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.left-container .text-container p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+
+/* Tablet view (max-width: 768px) */
+@media (max-width: 768px) {
+    .left-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    .left-container .image-container img {
+        max-width: 100%; /* Make image take full width on smaller screens */
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .left-container .text-container {
+        max-width: 100%; /* Make text container take full width */
+    }
+
+    .left-container .text-container h1 {
+        font-size: 24px; /* Smaller heading font size */
+    }
+
+    .left-container .text-container p {
+        font-size: 14px; /* Smaller paragraph font size */
+    }
+}
+
+/* Mobile view (max-width: 480px) */
+@media (max-width: 480px) {
+    .left-container {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .left-container .image-container img {
+        max-width: 100%; /* Full-width image on very small screens */
+    }
+
+    .left-container .text-container h1 {
+        font-size: 20px; /* Smaller heading font size */
+    }
+
+    .left-container .text-container p {
+        font-size: 12px; /* Even smaller font for paragraph */
+    }
+}
+
+.case-study {
+    font-family: "Roboto", serif;
+    color: blue;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    /* margin: 10px 10px; */
+    margin: 10px 10px 5px 10px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 10px;
+}
+
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.service {
+    position: relative;
+    text-align: center;
+    /* margin: 0 85px; */
+    margin: 10px 10px 5px 10px;
+    /* Match the margin of other sections */
+    /* width: calc(100% - 170px); */
+    width: 98.4%;
+    /* Maintain consistent width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service img {
+    width: 100%;
+    /* Maintain full width */
+    height: 200px;
+    /* Adjust height to be smaller */
+    object-fit: cover;
+    /* Ensure the video scales properly */
+}
+
+.service-msg {
+    position: absolute;
+}
+
+.service-msg h1 {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: brown;
+}
+
+footer {
+    background-color: #f8d7da;
+    padding: 40px 20px;
+}
+
+.footer {
+    /* margin: 0 85px; */
+    margin: 10px 10px 5px 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #182848, #4b6cb7);
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer .column {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer .column p {
+    /* margin-top: 50px; */
+    margin-right: 50px;
+}
+
+.footer .column a {
+    color: white;
+}
+
+.footer .column a:hover {
+    color: yellow;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #f1c40f;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #f1c40f;
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.social-icons i:hover{
+    color: yellow;
+}
+
+.copyRight {
+    /* margin: 10px 85px; */
+    margin: 10px 10px 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #182848;
+    color: white;
+}

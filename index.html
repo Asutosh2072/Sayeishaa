@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- <link rel="stylesheet" href="./new.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup()">×</button>
+            <!-- <img src="./images/Logo Saysha.png" alt="Sayeishaa Logo"> -->
+            <img src="./images/1.png" alt="">
+            <p>Follow Sayeishaa on LinkedIn today to learn more about how sayeishaa enables excellence.</p>
+            <button class="linkedIn" onclick="redirectToLinkedIn()">In LinkedIn</button>
+        </div>
+    </div>
+
+    <header class="section">
+        <div class="logo">
+            <a href="./index.html"><img src="./images/Logo Saysha.png" alt="Sayeishaa Logo"></a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutUs.html">Who We Are</a></li>
+
+                    <!-- "What We Do" Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            What We Do
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item dropdown">
+                                <a href="#" class="dropdown-toggle dropend" data-bs-toggle="dropdown"
+                                    aria-expanded="false">GIS</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./utility.html">Utility</a></li>
+                                    <li><a class="dropdown-item" href="./oil&gas.html">Oil & Gas</a></li>
+                                    <li><a class="dropdown-item" href="./lidar.html">Lidar and Photogrammetry</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./telecom.html">Telecommunication</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item dropdown">
+                                <a href="#" class="dropdown-toggle dropend" data-bs-toggle="dropdown"
+                                    aria-expanded="false">BIM</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./architecture.html">Architecture</a></li>
+                                    <li><a class="dropdown-item" href="./mepf.html">MEPF</a></li>
+                                    <li><a class="dropdown-item" href="./scan.html">Scan to BIM / CAT to BIM</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Cyclone</a></li>
+                            <li><a class="dropdown-item" href="#">Web & App Development</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Other Navigation Links -->
+                    <li class="nav-item"><a class="nav-link" href="#case-study">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#eventCarousel">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://sayeishaamepandarch.com/wp-content/uploads/2021/03/modern-design.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="heading-msg">
+                        <h1>Broad Vision</h1>
+                        <h1>Honest Service</h1>
+                        <h1>Great Value</h1>
+                        <p style="font-size: large;">Our goal then and now is to provide quality on time projects</p>
+                        <button type="button" class="btn btn-dark" data-target="contact-us">Get In Touch</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.sayeishaamepandarch.com/wp-content/uploads/2023/11/BIM.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="heading-msg">
+                        <h1>Broad Vision</h1>
+                        <h1>Honest Service</h1>
+                        <h1>Great Value</h1>
+                        <p style="font-size: large;">Our goal then and now is to provide quality on time projects</p>
+                        <button type="button" class="btn btn-dark" data-target="contact-us">Get In Touch</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.sayeishaamepandarch.com/wp-content/uploads/2023/11/new333.jpg" alt="...">
+                    <div class="heading-msg">
+                        <h1>Broad Vision</h1>
+                        <h1>Honest Service</h1>
+                        <h1>Great Value</h1>
+                        <p style="font-size: large;">Our goal then and now is to provide quality on time projects</p>
+                        <button type="button" class="btn btn-dark" data-target="contact-us">Get In Touch</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="left-container">
+            <div class="image-container">
+                <img src="./images/22.webp" alt="Sayeishaa">
+            </div>
+            <div class="text-container">
+                <h1>Who We Are</h1>
+                <p>Sayeishaa Mep & Arch Solution is an end-to-end sustainability solutions provider, with core areas of
+                    focus being Green Building Projects, EIA Projects, Energy Audit Projects, Management System
+                    Projects,
+                    Testing & Commissioning Projects. As sustainability gets increasing focus among business leaders, we
+                    have tailored solutions covering different dimensions of sustainability to accelerate initiatives
+                    and
+                    fill capability gaps.</p>
+                <a href="./aboutUs.html" class="button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="video">
+            <video
+                src="https://www.sayeishaamepandarch.com/wp-content/uploads/2023/09/pexels-rodnae-productions-7490440-1080p-1.mp4"
+                autoplay loop muted></video>
+            <div class="video-msg">
+                <h1>Get Your Free Consultation</h1>
+                <hr style="color: yellow; size: 10;">
+                <p>Find out what you like doing best and get someone to pay you for doing it.</p>
+                <button type="button" class="btn btn-dark" data-target="contact-us">Get In Touch</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="Specialization">
+            <div class="specialization-container">
+                <div class="image-section">
+                    <img src="https://sayeishaamepandarch.com/wp-content/uploads/elementor/thumbs/banner-2-qclbf2t7bfxld0njouyk683couz57ijgnkyya1id5s.jpg"
+                        alt="Building Architecture">
+                </div>
+                <div class="content-section">
+                    <h2>Our Specialization</h2>
+                    <ul class="specialization-list">
+                        <!-- <li><span class="icon">🌍</span> REMOTE SENSING</li> -->
+                        <li><span class="icon"></span><img src="./images/remote-sensing-satellite.png" alt=""> REMOTE
+                            SENSING</li>
+                        <!-- <li><span class="icon">⏳</span> GIS</li> -->
+                        <li><span class="icon"></span><img src="./images/map.png" alt=""> GIS</li>
+                        <!-- <li><span class="icon">💻</span> IT (Web and App Development)</li> -->
+                        <li><span class="icon"></span><img src="./images/programming.png" alt=""> IT (Web and App
+                            Development)</li>
+                        <!-- <li><span class="icon">📷</span> LiDAR AND PHOTOGRAMMETRY</li> -->
+                        <li><span class="icon"></span><img src="./images/shield.png" alt=""> LiDAR AND PHOTOGRAMMETRY
+                        </li>
+                        <!-- <li><span class="icon">📦</span> ARCHITECTURE</li> -->
+                        <li><span class="icon"></span><img src="./images/construction.png" alt=""> ARCHITECTURE</li>
+                        <!-- <li><span class="icon">🖊</span> BIM</li> -->
+                        <li><span class="icon"></span><img src="./images/contruction1.png" alt=""> BIM</li>
+                        <!-- <li><span class="icon">📄</span> STRUCTURAL</li> -->
+                        <li><span class="icon"></span><img src="./images/buildings.png" alt=""> STRUCTURAL</li>
+                        <!-- <li><span class="icon">🔥</span> FIRE PROTECTION</li> -->
+                        <li><span class="icon"></span><img src="./images/risk.png" alt=""> FIRE PROTECTION</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <h2 class="case-study" id="case-study">Case Studies</h2>
+        <div class="card-group">
+            <div class="card">
+                <img src="https://sayeishaamepandarch.com/wp-content/uploads/2023/10/Untitled.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Urban Planning</h5>
+                    <p class="card-text">Urban planning, the intricate process of designing cities for sustainable,
+                        efficient, and liveable environments, has found a crucial role in Geographic Information Systems
+                        (GIS).</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://sayeishaamepandarch.com/wp-content/uploads/2023/11/988.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Road Navigation</h5>
+                    <p class="card-text">GIS creates and manages digital map with various layers of geospatial data,
+                        supporting navigation through roads, landmarks, and points of interest. </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://sayeishaamepandarch.com/wp-content/uploads/2023/11/987.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Landbase</h5>
+                    <p class="card-text">Navigation solutions for better safety and driving experience. SAYEISHAA is an
+                        end-to-end service provider in the mapping and navigation geo-content space with the right mix
+                        of on-site and off-site teams. </p>
+                </div>
+            </div>
+        </div>
+        <a href="./project.html" class="button">View All</a>
+    </section>
+    <section class="section">
+        <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Event 1"></button>
+                <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="1"
+                    aria-label="Event 2"></button>
+                <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="2"
+                    aria-label="Event 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://img.freepik.com/free-photo/christmas-tree-snowy-park_23-2150830388.jpg?ga=GA1.1.325862971.1735199298&semt=ais_hybrid"
+                        class="d-block w-100" alt="Event 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Event 1</h5>
+                        <p>Description of Event 1.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/free-vector/beautiful-happy-diwali-festival-bokeh-banner_1017-21645.jpg?ga=GA1.1.325862971.1735199298&semt=ais_hybrid"
+                        class="d-block w-100" alt="Event 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Event 2</h5>
+                        <p>Description of Event 2.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/free-photo/3d-durga-goddess-navratri-celebration_23-2151188955.jpg?ga=GA1.1.325862971.1735199298&semt=ais_hybrid"
+                        class="d-block w-100" alt="Event 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Event 3</h5>
+                        <p>Description of Event 3.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <h1>What Our Clients Say</h1>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"This company has been a game changer for our business. Their dedication and expertise are unmatched!"</p>
+                <span class="client">John Doe</span><br>
+                <span class="client-role">CEO, TechCorp</span>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <p>"Exceptional service! The team goes above and beyond to ensure our satisfaction every time."</p>
+                <span class="client">Jane Smith</span><br>
+                <span class="client-role">Marketing Director, BrightAds</span>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <p>"I highly recommend their services. They truly care about their clients and deliver great results."</p>
+                <span class="client">Sarah Lee</span><br>
+                <span class="client-role">Founder, GreenLeaf</span>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <p>"Their attention to detail and customer-first approach is commendable. We are extremely satisfied!"</p>
+                <span class="client">Michael Brown</span><br>
+                <span class="client-role">CTO, InnovateX</span>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <p>"Working with this team has been a pleasure. They always deliver on time and exceed expectations."</p>
+                <span class="client">Emily White</span><br>
+                <span class="client-role">Operations Manager, EcoBuild</span>
+                <div class="rating">★★★★★</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="contact-section" id="contact-us">
+            <h1>Get In Touch With Us</h1>
+            <div class="form-container">
+                <form id="contactForm" action="/post" method="post">
+                    <div class="row">
+                        <input type="text" placeholder="Name" id="Name" name="Name" required>
+                        <input type="text" placeholder="Company Name" id="Company_Name" name="Comapny_Name" required>
+                    </div>
+                    <div class="row">
+                        <input type="tel" placeholder="Phone No." id="Phone_No" name="Phone_No" required>
+                        <input type="email" placeholder="Your Email" id="Your_Email" name="Your_Email" required>
+                    </div>
+                    <textarea placeholder="Your Message ..." rows="4" id="Your_Msg" name="Your_Msg" required></textarea>
+                    <div class="recaptcha-container">
+                        <div style="display: flex; align-items: center;">
+                            <input type="checkbox" id="recaptcha_checkbox" name="recaptcha_checkbox"
+                                style="width: 20px; height: 20px; margin-right: 10px;">
+                            <label for="recaptcha-checkbox" class="recaptcha-label">I'm not a robot</label>
+                        </div>
+                        <div class="recaptcha-logo">
+                            <img src="https://www.google.com/recaptcha/about/images/reCAPTCHA-logo@2x.png"
+                                alt="reCAPTCHA logo">
+                            <div class="recaptcha-privacy">
+                                <a href="#">Privacy</a> • <a href="#">Terms</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" id="submitBtn" disabled>SUBMIT</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <form id="contactForm">
+        <div class="row">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="companyName" placeholder="Company Name" required>
+        </div>
+        <div class="row">
+            <input type="tel" name="phone" placeholder="Phone No." required>
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <textarea name="message" placeholder="Your Message ..." rows="4" required></textarea>
+            <div class="recaptcha-container">
+                <div style="display: flex; align-items: center;">
+                    <input type="checkbox" id="recaptcha-checkbox" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <label for="recaptcha-checkbox" class="recaptcha-label">I'm not a robot</label>
+                </div>
+                <div class="recaptcha-logo">
+                    <img src="https://www.google.com/recaptcha/about/images/reCAPTCHA-logo@2x.png" alt="reCAPTCHA logo">
+                    <div class="recaptcha-privacy">
+                        <a href="#">Privacy</a> • <a href="#">Terms</a>
+                    </div>
+                </div>
+            </div>
+        <button type="submit" id="submitBtn" disabled>SUBMIT</button>
+      </form> -->
+
+
+    <footer class="section">
+        <div class="footer">
+            <!-- <div class="column">
+                <p>Sayeishaa Mep & Arch Solution is led by a Professionally managed Teams with more than 10+ years of
+                    Industry Experience. With a continued focus on Innovation, High-Quality Service, the company has
+                    consistently gained the Trust and Reliability of its Partners and Associates.</p>
+            </div> -->
+            <div class="column">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Urban Planning</a></li>
+                    <li><a href="#">Infrastructure</a></li>
+                    <li><a href="#">Telecom</a></li>
+                    <li><a href="#">Agriculture</a></li>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Mining</a></li>
+                    <li><a href="#">Geological</a></li>
+                    <li><a href="#">Mapping</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Structural</a></li>
+
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="#">GIS</a></li>
+                    <li><a href="#">BIM</a></li>
+                    <li><a href="#">Fire Protection</a></li>
+                    <li><a href="#">Lidar and photogrammetry</a></li>
+                    <li><a href="#">Agriculture</a></li>
+                    <li><a href="#">Mapping</a></li>
+                    <li><a href="#">Disaster</a></li>
+                    <li><a href="#">Management</a></li>
+                    <li><a href="#">Image Processing</a></li>
+                    <li><a href="#">DIM/DEM/DSMFIRE</a></li>
+                    <li><a href="#">Protection</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Contact Details</h3>
+                <p>Bhubaneswar</p>
+                <p>+91 9658000787</p>
+                <a href="mailto:info@sayeishaamepandarch.com" target="_blank">info@sayeishaamepandarch.com</a>
+            </div>
+            <div class="column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.linkedin.com/in/sayeishaa-mep-and-arch-solution-pvt-ltd-8b0b0a343/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <!-- <a href="mailto:info@sayeishaamepandarch.com" target="_blank"><i
+                            class="fa-regular fa-envelope"></i></a> -->
+                    <a href="https://x.com/SayeishaaMep" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="copyRight">
+            <p>Hello</p>
+            &copy; 2022 Sayeishaa. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
