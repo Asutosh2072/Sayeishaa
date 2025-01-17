@@ -65,7 +65,7 @@ header nav ul li.dropdown:hover > .dropdown-content{
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -50px;
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -170,7 +170,7 @@ header nav ul li.dropdown:hover > .dropdown-content{
 
 .left-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
     padding: 30px;
@@ -193,15 +193,15 @@ header nav ul li.dropdown:hover > .dropdown-content{
 /* Text Container */
 .left-container .text-container {
     margin-left: 50px;
-    max-width: 500px;
-    text-align: left;
+    max-width: 800px;
+    text-align: center;
 }
 
 /* Heading Styling */
 .left-container .text-container h1 {
     color: #333;
     font-size: 28px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-decoration-color: rgb(138, 138, 237);
     text-underline-offset: 7px;
     text-decoration-thickness: 3.1px;

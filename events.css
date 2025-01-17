@@ -64,7 +64,7 @@ header nav ul li.dropdown:hover > .dropdown-content{
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -50px;
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
