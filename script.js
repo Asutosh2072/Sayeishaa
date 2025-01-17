@@ -172,4 +172,3 @@ document.addEventListener("DOMContentLoaded", () => {
       animateCount(counter, targetValue, duration);
     });
   });
-  

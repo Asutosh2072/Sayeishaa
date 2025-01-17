@@ -156,7 +156,6 @@ header nav ul li a:hover {
     color: #f1c40f;
 }
 
-/* Dropdown Styles */
 header nav ul li.dropdown:hover > .dropdown-content{
     display:block;
 }

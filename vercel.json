@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "script.js",
+        "use": "@vercel/node"
+      },
+       {
+        "src": "**",
+        "use": "@vercel/static"
+      }
+    ],
+     "routes": [
+     {
+         "src": "/(.*)",
+         "dest": "script.js"
+     }
+  
+    ],
+       "env": {
+         "MONGODB_URI": "mongodb+srv://asutoshsahoo072:Asutosh123@database.icbs2.mongodb.net/?retryWrites=true&w=majority&appName=database"
+     }
+  }
