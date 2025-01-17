@@ -26,22 +26,38 @@ const userSchema = new mongoose.Schema({
 const Users = mongoose.model("data",userSchema)
 
 app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname,'index.html.html'))
+    res.sendFile(path.join(__dirname,'index.html'))
 })
 
 app.post('/post',async (req, res)=>{
-    const {Name,Comapny_Name,Phone_No,Your_Email,Your_Msg,recaptcha_checkbox} = req.body
-    const user = new Users({
+    console.log("Request body:", req.body); // ADDED LOGGING
+    const { formType, Name, Comapny_Name, Phone_No, Your_Email,  Your_Msg, recaptcha_checkbox } = req.body;
+
+    const userData = {
         Name,
-        Comapny_Name,
-        Phone_No,
         Your_Email,
+        // Comapny_Name,
         Your_Msg,
-        recaptcha_checkbox
-    })
-    await user.save()
-    console.log(user)
-    res.send("Form Submission Successful")
+        recaptcha_checkbox,
+    };
+
+
+        if (formType === "contactPage") {
+            // userData.Comapny_Name = null;
+            userData.Comapny_Name = Comapny_Name;
+            userData.Phone_No = null;
+            // userData.subject = subject;
+        }else{
+            userData.Comapny_Name = Comapny_Name;
+            userData.Phone_No = Phone_No;
+            // userData.subject = null;
+        }
+        
+
+    const user = new Users(userData);
+    await user.save();
+    console.log(user);
+    res.send("Form Submission Successful");
 })
 
 app.listen(port,()=>{

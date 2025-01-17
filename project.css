@@ -7,91 +7,111 @@
 
 header {
     background: linear-gradient(90deg, #4ca1af, #2c3e50);
-    padding: 15px 20px;
-    /* margin: 0 105px; */
-    margin-top: 20px;
-    /* border-radius: 10px; */
+    color: #fff;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
 }
 
 header .logo img {
     max-width: 250px;
-    /* padding: 5px;
-    background-color: #fff; */
     border-radius: 5px;
 }
 
-header nav {
+header nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
-    gap: 15px;
 }
 
-header nav a {
+header nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
     transition: color 0.3s;
+    font-size: 0.9rem;
 }
 
-header nav a:hover {
+header nav ul li a:hover {
     color: #f1c40f;
 }
 
-/* General Styling for Dropdown */
-.dropdown-menu {
-    position: relative;
-    white-space: nowrap;
-    /* Ensure all items are in a single line */
-    text-align: left;
-    /* Align text to the left */
+/* Dropdown Styles */
+header nav ul li.dropdown:hover > .dropdown-content{
+    display:block;
 }
 
-.dropdown-item {
-    position: relative;
-    padding: 10px 15px;
-    /* Padding for dropdown items */
-}
-
-/* Submenu Styling */
-.dropdown-item .dropdown-menu {
+.dropdown-content {
     display: none;
-    /* Hide submenus by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+
+.dropdown-content li a{
+    color: black;
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+}
+
+.sub-dropdown {
+    position: relative;
+}
+
+.sub-dropdown:hover{
+    color: #f1c40f;
+}
+
+
+.sub-dropdown:hover .sub-dropdown-content{
+    display:block;
+}
+
+.sub-dropdown-content {
+    display: none;
     position: absolute;
     top: 0;
     left: 100%;
-    /* Position submenus to the right of parent */
-    z-index: 1000;
-    /* Ensure submenus appear on top */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    white-space: nowrap;
 }
 
-/* Show submenu on hover */
-.dropdown-item:hover .dropdown-menu {
+.sub-dropdown-content a{
+    color: black;
     display: block;
-}
-
-/* Link Styling */
-nav a,
-.dropdown-menu a {
+    padding: 8px 12px;
     text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
-    color: #333;
-    /* Adjust text color */
+    transition: background-color 0.2s;
 }
 
-.dropdown-menu a:hover {
-    background-color: #f8f9fa;
-    /* Hover effect */
-    color: #000;
-}
-
-/* Optional: Navbar links */
-nav a {
-    margin-right: 15px;
-    font-weight: bold;
+.sub-dropdown-content a:hover {
+    background-color: #f1f1f1;
 }
 
 .head-img {
@@ -135,7 +155,7 @@ nav a {
 
 .case-study {
     font-family: "Roboto", serif;
-    color: blue;
+    color: black;
     font-weight: 700;
     font-style: normal;
     text-align: center;
@@ -243,11 +263,12 @@ footer {
 }
 
 .footer {
-    /* margin: 0 85px; */
     margin: 10px 10px 5px 10px;
     border-radius: 10px;
-    background: linear-gradient(90deg, #182848, #4b6cb7);
-    color: white;
+    /* background: linear-gradient(90deg, #182848, #4b6cb7);
+    color: white; */
+    background-color: white;
+    color: black;
     padding: 30px 20px;
     display: flex;
     justify-content: space-around;
@@ -261,16 +282,15 @@ footer {
 }
 
 .footer .column p {
-    /* margin-top: 50px; */
     margin-right: 50px;
 }
 
 .footer .column a {
-    color: white;
+    color: black;
 }
 
 .footer .column a:hover {
-    color: yellow;
+    color: blue;
 }
 
 .footer h3 {
@@ -293,7 +313,7 @@ footer {
 }
 
 .footer ul li a:hover {
-    color: #f1c40f;
+    color: yellow;
 }
 
 .footer .social-icons a {
@@ -304,16 +324,17 @@ footer {
 }
 
 .footer .social-icons a:hover {
-    color: #f1c40f;
+    color: yellow;
 }
 
 .social-icons i {
+    color: black;
     font-size: 20px;
     margin-right: 10px;
 }
 
 .social-icons i:hover{
-    color: yellow;
+    color: blue;
 }
 
 .copyRight {

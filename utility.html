@@ -12,58 +12,42 @@
 </head>
 
 <body>
-    <header class="section">
+    <header>
         <div class="logo">
-            <a href="./index.html"><img src="./Logo Saysha.png" alt="Sayeishaa Logo"></a>
+            <a href="./index.html"><img src="./images/Logo Saysha.png" alt="Sayeishaa Logo"></a>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutUs.html">Who We Are</a></li>
-
-                    <!-- "What We Do" Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            What We Do
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li class="dropdown-item dropdown">
-                                <a href="#" class="dropdown-toggle dropend" data-bs-toggle="dropdown" aria-expanded="false">GIS</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./utility.html">Utility</a></li>
-                                    <li><a class="dropdown-item" href="./oil&gas.html">Oil & Gas</a></li>
-                                    <li><a class="dropdown-item" href="./lidar.html">Lidar and Photogrammetry</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="./telecom.html">Telecommunication</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-item dropdown">
-                                <a href="#" class="dropdown-toggle dropend" data-bs-toggle="dropdown"
-                                    aria-expanded="false">BIM</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./architecture.html">Architecture</a></li>
-                                    <li><a class="dropdown-item" href="./mepf.html">MEPF</a></li>
-                                    <li><a class="dropdown-item" href="./scan.html">Scan to BIM / CAT to BIM</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Cyclone</a></li>
-                            <li><a class="dropdown-item" href="#">IT</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Other Navigation Links -->
-                    <li class="nav-item"><a class="nav-link" href="./project.html">Case Studies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
-                </ul>
-            </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutUs.html">Who We Are</a></li>
+                <li class="dropdown">
+                    <a href="#">What We Do <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li class="sub-dropdown">
+                            <a href="#">GIS <i class="fas fa-caret-right"></i></a>
+                            <ul class="sub-dropdown-content">
+                                <li><a href="./utility.html">Utility</a></li>
+                                <li><a href="./oil&gas.html">Oil & Gas</a></li>
+                                <li><a href="./lidar.html">Lidar and Photogrammetry</a></li>
+                                <li><a href="./telecom.html">Telecommunication</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-dropdown">
+                            <a href="#">BIM <i class="fas fa-caret-right"></i></a>
+                            <ul class="sub-dropdown-content">
+                                <li><a href="./architecture.html">Architecture</a></li>
+                                <li><a href="./mepf.html">MEPF</a></li>
+                                <li><a href="./scan.html">Scan to BIM / CAT to BIM</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-dropdown"><a class="dropdown-item" href="./cyclone.html">Cyclone</a></li>
+                        <li class="sub-dropdown"><a class="dropdown-item" href="./IT.html">Web & App Development</a></li>
+                    </ul>
+                </li>
+                <li><a href="./project.html">Case Studies</a></li>
+                <!-- <li><a href="./events.html">Events</a></li> -->
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -71,7 +55,7 @@
         <div class="head-img">
             <img src="https://sayeishaamepandarch.com/wp-content/uploads/2023/10/UTL.jpg" alt="">
             <div class="head-msg">
-                <h1>Utility</h1>
+                <!-- <h1>Utility</h1> -->
             </div>
         </div>
     </section>
@@ -135,7 +119,7 @@
                     <li><a href="#">Management</a></li>
                     <li><a href="#">Image Processing</a></li>
                     <li><a href="#">DIM/DEM/DSMFIRE</a></li>
-                    <li><a href="#">Protection</a></li>
+                    <!-- <li><a href="#">Protection</a></li> -->
                 </ul>
             </div>
             <div class="column">
@@ -143,13 +127,17 @@
                 <p>Bhubaneswar</p>
                 <p>+91 9658000787</p>
                 <a href="mailto:info@sayeishaamepandarch.com" target="_blank">info@sayeishaamepandarch.com</a>
+                <a href="mailto:satyanarayan@sayeishaamepandarch.com" target="_blank">satyanarayan@sayeishaamepandarch.com</a>
             </div>
             <div class="column">
                 <h3>Follow Us</h3>
                 <div class="social-icons">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-regular fa-envelope"></i>
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/sayeishaa-mep-and-arch-solution-pvt-ltd-8b0b0a343/"
+                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <!-- <a href="mailto:info@sayeishaamepandarch.com" target="_blank"><i
+                            class="fa-regular fa-envelope"></i></a> -->
+                    <a href="https://x.com/SayeishaaMep" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
             <br>

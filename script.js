@@ -120,3 +120,56 @@ function closePopup() {
         popup.style.display = 'none'; // Hide the popup
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const heroImage = document.querySelector('.hero-image img');
+
+    window.addEventListener('scroll', function () {
+        const scrollPos = window.scrollY;
+        heroImage.style.transform = `translateY(${-scrollPos / 6}px)`;
+    });
+});
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Function to animate the count for each element
+    function animateCount(element, targetValue, duration) {
+      let startValue = 0;
+      let startTime = null;
+  
+      function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const elapsed = timestamp - startTime;
+  
+        // Calculate progress (0 to 1)
+        const progress = Math.min(elapsed / duration, 1);
+  
+        // Calculate the current value
+        const currentValue = Math.floor(startValue + (targetValue - startValue) * progress);
+  
+        // Update the element's text with the current value
+        element.textContent = currentValue + "+";
+  
+        // Continue animation or finish
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        }
+      }
+  
+      requestAnimationFrame(step);
+    }
+  
+    // Select all elements with the 'data-target' attribute
+    const counters = document.querySelectorAll(".count h3");
+  
+    counters.forEach((counter) => {
+      const targetValue = parseInt(counter.getAttribute("data-target"), 10);
+      const duration = 2000; // Duration of animation in milliseconds
+  
+      animateCount(counter, targetValue, duration);
+    });
+  });
+  
