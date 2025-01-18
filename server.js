@@ -32,7 +32,7 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const userSchema = new mongoose.Schema({
     Name: String,
-    Comapny_Name: String,
+    Company_Name: String,
     Phone_No: String,
     Your_Email: String,
     Your_Msg: String,
@@ -47,23 +47,23 @@ app.get('/', (req, res) => {
 
 app.post('/post', async (req, res) => {
         console.log("Request body:", req.body);
-        const { formType, Name, Comapny_Name, Phone_No, Your_Email,  Your_Msg, recaptcha_checkbox } = req.body;
+        const { formType, Name, Company_Name, Phone_No, Your_Email,  Your_Msg, recaptcha_checkbox } = req.body;
 
         const userData = {
             Name,
             Your_Email,
-            // Comapny_Name,
+            // Company_Name,
             Your_Msg,
             recaptcha_checkbox,
         };
     
             if (formType === "contactPage") {
-                // userData.Comapny_Name = null;
-                userData.Comapny_Name = Comapny_Name;
+                // userData.Company_Name = null;
+                userData.Company_Name = Company_Name;
                 userData.Phone_No = null;
                 // userData.subject = subject;
             }else{
-                userData.Comapny_Name = Comapny_Name;
+                userData.Company_Name = Company_Name;
                 userData.Phone_No = Phone_No;
                 // userData.subject = null;
             }
