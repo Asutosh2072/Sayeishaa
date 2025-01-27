@@ -172,7 +172,7 @@ header nav ul li.dropdown:hover > .dropdown-content{
 .right-container .image-container img {
     width: 100%;
     max-width: 500px;
-    height: 500px;
+    height: auto;
     margin: 20px;
 }
 

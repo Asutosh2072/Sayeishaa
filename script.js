@@ -125,7 +125,7 @@ window.onload = function () {
 
 // Function to redirect to LinkedIn and close the popup
 function redirectToLinkedIn() {
-    window.open("https://www.linkedin.com/company/sayeishaa-mep-and-arch-pvt-ltd/", "_blank"); // Open LinkedIn in a new tab
+    window.open("https://www.linkedin.com/in/sayeishaa-mep-and-arch-solution-pvt-ltd-8b0b0a343/", "_blank"); // Open LinkedIn in a new tab
     closePopup(); // Close the popup in the current tab
 }
 

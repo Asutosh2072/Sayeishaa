@@ -171,6 +171,7 @@ header nav ul li.dropdown:hover > .dropdown-content{
 }
 
 .hero-image img {
+    max-height: 600px;
     max-width: 500px;
     border-radius: 10px;
     transform: translateY(-20px);
